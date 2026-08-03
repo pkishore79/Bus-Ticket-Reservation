@@ -19,7 +19,7 @@ const MyBooking=()=>{
             return;
         }
 
-        axios.get(`http://localhost:8080/api/bookings/user/${user.id}`)
+        axios.get(`https://bus-ticket-reservation-1.onrender.com/api/bookings/user/${user.id}`)
         .then(res=>{
             setBookings(res.data);
         })
@@ -30,7 +30,7 @@ const MyBooking=()=>{
 
     const cancelBooking=(id)=>{
 
-        axios.delete(`http://localhost:8080/api/bookings/${id}`)
+        axios.delete(`https://bus-ticket-reservation-1.onrender.com/api/bookings/${id}`)
         .then(()=>{
             alert("Booking cancelled");
             loadBookings();

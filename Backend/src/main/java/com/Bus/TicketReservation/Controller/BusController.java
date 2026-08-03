@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/buses")
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin(origins = "*")
 public class BusController {
 
     @Autowired

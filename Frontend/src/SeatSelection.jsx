@@ -24,7 +24,7 @@ const SeatSelection = () => {
             return;
         }
 
-        axios.get(`http://localhost:8080/api/seats/bus/${bus.busId}?date=${date}`)
+        axios.get(`https://bus-ticket-reservation-1.onrender.com/api/seats/bus/${bus.busId}?date=${date}`)
             .then(res => setSeats(res.data))
             .catch(err => console.log(err));
     };

@@ -1,81 +1,4 @@
-// import React, { useState } from 'react'
-// import SearchRes from './SearchRes'
-// import './Search.css'
-// import BackHome from './BackHome'
 
-// function Search({ showBackHome = false }) {
-
-//   let [state,setState]=useState([])
-//   let [stage,setStage]=useState(false)
-
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-
-//     const formData = new FormData(e.target);
-
-//     const source = formData.get("source");
-//     const destination = formData.get("destination");
-//     const travelDate = formData.get("td");
-
-//     console.log(source, destination, travelDate);
-
-//     try {
-//       const response = await fetch(
-//         "http://localhost:8080/api/buses/search?source=" +
-//           source +
-//           "&destination=" +
-//           destination +
-//           "&seats=1",
-//         {
-//           method: "GET",
-//         }
-//       );
-
-//       const data = await response.json();
-//       setState(data)
-//       setStage(true);
-
-//     } catch (error) {
-//       console.error("Error fetching buses:", error);
-//     }
-//   };
-
-//   return (
-//     <div>
-//       {showBackHome && <BackHome></BackHome>}
-//     <div className='search'>
-//       <form onSubmit={handleSubmit}>
-//         <section>
-//           <label>From</label>
-//           <input type="text" name="source" placeholder="📍 Source" required />
-//         </section>
-
-//         <section>
-//           <label>To</label>
-//           <input type="text" name="destination" placeholder="📍 Destination" required />
-//         </section>
-
-//         {/* <section>
-//           <label>Travel Date</label>
-//           <input type="date" name="td" required />
-//         </section> */}
-
-//         <section className='searchbut'>
-//           <button type="submit">🔎 Search</button>
-//         </section>
-//       </form>
-      
-//     </div>
-//       {
-//         stage &&
-//         <SearchRes buses={state}></SearchRes>
-//       }
-//     </div>
-//   );
-// }
-
-// export default Search;
 
 import React, { useState, useEffect } from 'react'   // NEW CODE: added useEffect
 import SearchRes from './SearchRes'
@@ -105,7 +28,7 @@ function Search({ showBackHome = false }) {
       try {
 
         const response = await fetch(
-          "http://localhost:8080/api/buses/"
+          "https://bus-ticket-reservation-1.onrender.com/api/buses/"
         );
 
         const data = await response.json();
@@ -176,7 +99,7 @@ function Search({ showBackHome = false }) {
     try {
 
       const response = await fetch(
-        "http://localhost:8080/api/buses/search?source=" +
+        "https://bus-ticket-reservation-1.onrender.com/api/buses/search?source=" +
           source +
           "&destination=" +
           destination +

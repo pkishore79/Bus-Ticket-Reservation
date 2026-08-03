@@ -21,7 +21,7 @@ function Register() {
 
   const handleSubmit=async(e)=>{
     e.preventDefault();
-    const res=await axios.post("http://localhost:8080/user/register",form)
+    const res=await axios.post("https://bus-ticket-reservation-1.onrender.com/user/register",form)
     alert(res.data.message);
     if(res.data.message.includes("Registered successfully"))
     {

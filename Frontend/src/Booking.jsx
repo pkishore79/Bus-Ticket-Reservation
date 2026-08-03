@@ -60,7 +60,7 @@ const Booking=()=>{
         };
 
         axios.post(
-            "http://localhost:8080/api/bookings",
+            "https://bus-ticket-reservation-1.onrender.com/api/bookings",
             data
         )
         .then(()=>{
