@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Profile from './Profile';
 import '/src/Nav.css';
 import Mybooking from './Mybooking';
+import logo from "../image/logo.jpg";
 
 function Nav() {
 
@@ -14,7 +15,7 @@ function Nav() {
     <div className='Nav'> 
 
         <section className='section'>
-            <img src="./logo.jpg" alt="" />
+            <img src={logo} alt="" />
             <h1>BUSGO</h1>
         </section>
 

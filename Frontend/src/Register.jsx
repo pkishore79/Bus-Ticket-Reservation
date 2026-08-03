@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import '/src/Register.css'
 import axios from 'axios';
 import BackHome from './BackHome';
+import logo from "../image/logo.jpg";
 
 function Register() {
 
@@ -51,7 +52,7 @@ function Register() {
     <div className='register'>
         <form action="" onSubmit={handleSubmit}>
             <div>
-                <img src="./logo.jpg" alt="" />
+                <img src={logo} alt="" />
                 <h1>BUSGO</h1>
             </div>
             <input type="text" name='username' placeholder='UserName' required onChange={handleChange}/>

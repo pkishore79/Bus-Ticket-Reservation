@@ -1,5 +1,6 @@
 import React from 'react'
 import './Intro.css'
+import intro from "../image/intro.jpg";
 
 function Intro() {
   return (
@@ -10,7 +11,7 @@ function Intro() {
             <p>Search thousands of routes, compare buses, and reserve your seat in seconds. Your next trip is just a few clicks away</p>
         </section>
         <section className='left'>
-            <img src="./intro.jpg" alt="" />
+            <img src={intro} alt="" />
         </section>
     </div>
   )
