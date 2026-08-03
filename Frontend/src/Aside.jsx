@@ -1,9 +1,9 @@
 import './Aside.css'
 
 import React from 'react'
-import credit from "../image/credit-card.png";
-import booking from "../image/booking.png";
-import time from "../image/time.png";
+import credit from "./image/credit-card.png";
+import booking from "./image/booking.png";
+import time from "./image/time.png";
 
 function Aside() {
   return (

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Profile from './Profile';
 import '/src/Nav.css';
 import Mybooking from './Mybooking';
-import logo from "../image/logo.jpg";
+import logo from "./image/logo.jpg";
 
 function Nav() {
 

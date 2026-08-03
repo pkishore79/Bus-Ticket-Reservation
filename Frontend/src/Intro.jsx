@@ -1,6 +1,6 @@
 import React from 'react'
 import './Intro.css'
-import intro from "../image/intro.jpg";
+import intro from "./image/intro.jpg";
 
 function Intro() {
   return (
