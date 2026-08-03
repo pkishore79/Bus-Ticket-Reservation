@@ -14,7 +14,7 @@ function Nav() {
     <div className='Nav'> 
 
         <section className='section'>
-            <img src="src/images/logo.jpg" alt="" />
+            <img src="./logo.jpg" alt="" />
             <h1>BUSGO</h1>
         </section>
 

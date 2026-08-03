@@ -10,7 +10,7 @@ function Intro() {
             <p>Search thousands of routes, compare buses, and reserve your seat in seconds. Your next trip is just a few clicks away</p>
         </section>
         <section className='left'>
-            <img src="src/images/intro.jpg" alt="" />
+            <img src="./intro.jpg" alt="" />
         </section>
     </div>
   )

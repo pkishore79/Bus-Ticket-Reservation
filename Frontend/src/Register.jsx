@@ -51,7 +51,7 @@ function Register() {
     <div className='register'>
         <form action="" onSubmit={handleSubmit}>
             <div>
-                <img src="/src/images/logo.jpg" alt="" />
+                <img src="./logo.jpg" alt="" />
                 <h1>BUSGO</h1>
             </div>
             <input type="text" name='username' placeholder='UserName' required onChange={handleChange}/>

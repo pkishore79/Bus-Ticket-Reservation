@@ -50,7 +50,7 @@ function Login() {
     <div className='login'>
         <form action="" onSubmit={handleSubmit}>
             <div>
-                <img src="/src/images/logo.jpg" alt="" />
+                <img src="./logo.jpg" alt="" />
                 <h1>BUSGO</h1>
             </div>
             <input type="text" placeholder='Username' name='username' required onChange={handleChange}/>
