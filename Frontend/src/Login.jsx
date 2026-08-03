@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import '/src/Login.css'
 import axios from 'axios'
 import BackHome from './BackHome'
-import logo from "./image/logo.jpg";
+import logo from "./images/logo.jpg";
 
 function Login() {
 
