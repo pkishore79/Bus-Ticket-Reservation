@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import {useLocation,useNavigate} from "react-router-dom";
 import axios from "axios";
 import "./Booking.css";
+import BackHome from './BackHome'
 
 const Booking=()=>{
 
@@ -79,7 +80,8 @@ const Booking=()=>{
     };
 
     return(
-
+        <div>
+            <BackHome></BackHome>
         <div className="booking">
 
             <h2>Booking</h2>
@@ -132,6 +134,7 @@ const Booking=()=>{
                 Confirm Booking
             </button>
 
+        </div>
         </div>
     );
 };

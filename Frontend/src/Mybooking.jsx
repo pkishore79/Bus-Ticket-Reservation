@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from "react";
 import axios from "axios";
 import "./Mybooking.css";
+import BackHome from "./BackHome";
 
 const MyBooking=()=>{
 
@@ -41,6 +42,8 @@ const MyBooking=()=>{
     };
 
     return(
+        <div>
+            <BackHome></BackHome>
         <div className="my-booking">
 
             <h2>My Bookings</h2>
@@ -92,6 +95,7 @@ const MyBooking=()=>{
                 ))
             }
 
+        </div>
         </div>
     );
 };
